@@ -1,0 +1,40 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+  //TABLET
+  @media only screen and (max-width: 768px) {
+    gap: 0.5rem;
+  }
+  //MOBILE
+  @media only screen and (max-width: 480px) {
+    gap: 0.25rem;
+  }
+
+  &__link {
+    color: var(--color-UI4);
+    text-decoration: none;
+    padding: 0.25rem;
+    margin: 0;
+    border-radius: var(--border-rounded);
+    transition: all 250ms ease-in-out;
+    //TABLET
+    @media only screen and (max-width: 768px) {
+      font-size: 0.8rem;
+    }
+    //MOBILE
+    @media only screen and (max-width: 480px) {
+      font-size: 0.5rem;
+    }
+
+    &:hover {
+      color: var(--color-UI5);
+      border: 1px solid var(--color-UI5);
+    }
+    &:active {
+      color: var(--color-white);
+    }
+  }
+}

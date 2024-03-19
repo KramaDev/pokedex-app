@@ -1,0 +1,32 @@
+:root {
+  //COLORS
+  --color-black: #222;
+  --color-white: #fff;
+
+  --color-UI1: #8c1b24;
+  --color-UI2: #a68263;
+  --color-UI3: #593f2f;
+  --color-UI4: #d9c6bf;
+  --color-UI5: #bf2424;
+
+  //BORDERS
+  --border-rounded: 1rem;
+  --border-circle: 1600rem;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+//IMPORTS
+//COMPONENTS
+@import "./components/button.scss";
+@import "./components/header.scss";
+@import "./components/layout.scss";
+@import "./components/navigation.scss";
+@import "./components/pokedex.scss";

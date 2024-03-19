@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem 5rem;
+  background-color: var(--color-black);
+  box-shadow: 1px 1px 1rem var(--color-black);
+  //TABLET
+  @media only screen and (max-width: 768px) {
+    padding: 1rem 3rem;
+  }
+  //MOBILE
+  @media only screen and (max-width: 480px) {
+    padding: 1rem 1.5rem;
+  }
+
+  &__logo {
+    width: 4rem;
+    height: 4rem;
+    //TABLET
+    @media only screen and (max-width: 768px) {
+      width: 3rem;
+      height: 3rem;
+    }
+    //MOBILE
+    @media only screen and (max-width: 480px) {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  &__title {
+    color: var(--color-white);
+    margin: 0;
+    font-size: 3rem;
+
+    //TABLET
+    @media only screen and (max-width: 768px) {
+      font-size: 2rem;
+    }
+    //MOBILE
+    @media only screen and (max-width: 480px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0.5rem;
+}

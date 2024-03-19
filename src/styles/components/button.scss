@@ -1,0 +1,28 @@
+.btn {
+  border: 2px solid var(--color-black);
+  border-radius: var(--border-rounded);
+
+  background-color: var(--color-white);
+
+  padding: 1rem 2rem;
+  margin: 0 1rem;
+
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  box-shadow: 1px 1px 1rem var(--color-black);
+  transition: all 100ms ease-in-out;
+  //TABLET
+  @media only screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+  //MOBILE
+  @media only screen and (max-width: 480px) {
+    font-size: 0.75rem;
+  }
+
+  &:hover {
+    color: var(--color-white);
+    background-color: var(--color-UI3);
+  }
+}
